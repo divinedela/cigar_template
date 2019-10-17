@@ -1,0 +1,987 @@
+#container,
+#retailers {
+	height: 100%;
+}
+
+#retailers {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+#retailers.list {
+	overflow: visible;
+}
+
+	#retailers1 {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+		#retailers1-inner {
+			position: absolute;
+			top: -6%;
+			right: -2%;
+			bottom: -6%;
+			left: -2%;
+			transition: transform 1s .5s;
+			overflow: hidden;
+		}
+
+		#retailers.list #retailers1-inner {
+			transform: scale(.97);
+			transition: transform 1s;
+		}
+
+			#retailers1-map {
+				height: 100%;
+				margin-left: -2%;
+				margin-right: -2%;
+				background-color: #000;
+				opacity: 0;
+
+				transition: opacity 1s .7s, transform .65s .7s;
+				transform: scale(1.025);
+			}
+
+			#retailers1-map.fade-in {
+				opacity: 1;
+				transform: scale(1);
+			}
+
+				.gm-style .gm-style-iw-d {
+					overflow: hidden !important;
+				}
+
+				.gm-style .gm-style-iw-c {
+					padding: 0px;
+					border-radius: 4px;
+				}
+
+					#retailers1-map-infowindow {
+						padding: 30px 65px 68px 40px;
+					}
+
+						#retailers1-map-infowindow-close {
+							position: absolute;
+							top: 10px;
+							right: 10px;
+							width: 34px;
+							height: 34px;
+							cursor: pointer;
+						}
+
+							#retailers1-map-infowindow-close1,
+							#retailers1-map-infowindow-close2 {
+								position: absolute;
+								top: 16px;
+								left: 9px;
+								width: 15px;
+								height: 2px;
+								background-color: #292929;
+							}
+
+							#retailers1-map-infowindow-close1 { transform: rotate(45deg); }
+							#retailers1-map-infowindow-close2 { transform: rotate(-45deg); }
+
+						
+						#retailers1-map-infowindow-name {
+							font-family: freight-big-pro, serif;
+							font-weight: 400;
+							line-height: 110%;
+							font-size: 33px;
+						}
+
+						#retailers1-map-infowindow-address,
+						#retailers1-map-infowindow-phone-text,
+						#retailers1-map-infowindow-directions-text {
+							font-family: athelas, serif;
+						}
+
+						#retailers1-map-infowindow-address {
+							margin-top: 17px;
+							margin-bottom: 37px;
+
+							font-size: 18px;
+							line-height: 140%
+						}
+
+							#retailers1-map-infowindow-address span {
+								display: none;
+							}
+
+
+						#retailers1-map-infowindow a {
+							display: block;
+							float: left;
+							text-decoration: none;	
+							color: #000;
+						}
+
+							#retailers1-map-infowindow-phone {
+								margin-right: 60px;
+							}
+
+								#retailers1-map-infowindow-phone i,
+								#retailers1-map-infowindow-directions i {
+									float: left;
+									font-size: 24px;
+								}
+
+								#retailers1-map-infowindow-phone i,
+								.retailers2-result-phone i { 
+									margin-right: 5px;  
+								}
+
+								#retailers1-map-infowindow-directions i,
+								.retailers2-result-directions i { 
+									margin-top: -3px;
+									margin-right: 3px;  
+								}
+
+								
+								#retailers1-map-infowindow-phone-text,
+								#retailers1-map-infowindow-directions-text {
+									float: left;
+									font-size: 18px;
+								}
+
+						#retailers1-map-infowindow-arrow {
+							position: absolute;
+							left: 0px;
+							bottom: -15px;
+
+							width: 28px;
+							height: 15px;
+							background-color: #fff;
+						}
+
+				
+				.gm-style-iw-t {
+					opacity: 0;
+					transform: translateY(25px);
+					transition: opacity .5s, transform .5s;
+				}
+
+				.gm-style-iw-t.fade-in {
+					transform: translateY(15px);
+					opacity: 1;
+				}
+
+
+					.gm-style .gm-style-iw-t:after {
+						box-shadow: -2px 2px 2px 0 rgba(0,0,0,.4)
+					}
+
+					.gm-style .gm-style-iw-t button {
+						display: none !important;
+					}
+	
+		
+		#retailers1-gradient {
+			position: absolute;
+			right: 0px;
+			bottom: 0px;
+			left: 0px;
+			height: 160px;
+			background: linear-gradient(to top,  rgba(0,0,0,.5) 0%, rgba(0,0,0,0) 100%);
+			pointer-events: none;
+			opacity: 0;
+
+			transition: background-color .5s;
+		}
+
+		#retailers1-gradient.fade-in {
+			opacity: 1;
+		}
+
+		
+		#retailers.list .page-title3 {
+			opacity: 0;
+			pointer-events: none;
+		}
+
+
+		#retailers1-no-results {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			bottom: 0px;
+			left: 0px;
+			background-color: rgba(0,0,0,.95);
+			opacity: 0;
+
+			transition: opacity .5s .3s;
+			pointer-events: none;
+		}
+
+	
+	#retailers2 {
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		min-height: 100%;
+		background-color: #fff;
+		padding-bottom: 100px;
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s 1.2s, opacity .7s .5s;
+	}
+
+	#retailers.map #retailers2 {
+		pointer-events: none;
+	}
+
+	#retailers.list #retailers2 {
+		transition: visibility 0s, opacity .7s;
+		visibility: visible;
+		opacity: 1;
+	}
+		
+		#retailers2-top {
+			height: 146px;
+			border-bottom: 1px solid transparent;
+			transition: border-bottom-color .5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+		}
+
+		#retailers.list #retailers2-top {
+			border-bottom-color: #F0F0F0;
+			transition: border-bottom-color .5s .5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+		}
+		
+		#retailers2-list {
+			opacity: 0;
+			transition: opacity .5s;
+		}
+
+		#retailers.list #retailers2-list {
+			opacity: 1;
+			transition: opacity .8s .8s;
+		}
+
+			#retailers2-continents {
+				margin-top: 67px;
+				padding-bottom: 85px;
+				overflow: hidden;
+				border-bottom: 1px solid #F0F0F0;
+			}
+
+				#retailers2-continents-inner {
+					display: table;
+					margin: 0px auto;
+				}
+
+					.retailers2-continent {
+						float: left;
+						cursor: pointer;
+					}
+
+					#retailers[data-continent="1"] .retailers2-continent[data-id="1"],
+					#retailers[data-continent="2"] .retailers2-continent[data-id="2"],
+					#retailers[data-continent="3"] .retailers2-continent[data-id="3"],
+					#retailers[data-continent="4"] .retailers2-continent[data-id="4"],
+					#retailers[data-continent="5"] .retailers2-continent[data-id="5"],
+					#retailers[data-continent="6"] .retailers2-continent[data-id="6"],
+					#retailers[data-continent="7"] .retailers2-continent[data-id="7"],
+					#retailers[data-continent="8"] .retailers2-continent[data-id="8"],
+					#retailers[data-continent="9"] .retailers2-continent[data-id="9"],
+					#retailers[data-continent="10"] .retailers2-continent[data-id="10"] {
+						color: #000;
+						pointer-events: none;
+					}
+
+					.retailers2-continent:not(:last-child) {
+						margin-right: 130px;
+					}
+
+						#retailers[data-continent="1"] .retailers2-continent[data-id="1"] .page-button-title-text:after,
+						#retailers[data-continent="2"] .retailers2-continent[data-id="2"] .page-button-title-text:after,
+						#retailers[data-continent="3"] .retailers2-continent[data-id="3"] .page-button-title-text:after,
+						#retailers[data-continent="4"] .retailers2-continent[data-id="4"] .page-button-title-text:after,
+						#retailers[data-continent="5"] .retailers2-continent[data-id="5"] .page-button-title-text:after,
+						#retailers[data-continent="6"] .retailers2-continent[data-id="6"] .page-button-title-text:after,
+						#retailers[data-continent="7"] .retailers2-continent[data-id="7"] .page-button-title-text:after,
+						#retailers[data-continent="8"] .retailers2-continent[data-id="8"] .page-button-title-text:after,
+						#retailers[data-continent="9"] .retailers2-continent[data-id="9"] .page-button-title-text:after,
+						#retailers[data-continent="10"] .retailers2-continent[data-id="10"] .page-button-title-text:after {
+							transform: scaleX(1);
+							transform-origin: left;
+						}
+
+					.retailers2-continent.no-results {
+						pointer-events: none;
+						color: #f1f1f1;
+					}
+
+
+				#retailers2-continents-inner-mobile {
+					display: none;
+				}
+
+			
+			#retailers2-results {
+				opacity: 0;
+				transition: opacity .5s;
+			}
+
+
+			#retailers2-results.fade-in {
+				opacity: 1;
+			}
+
+				.retailers2-result {
+					padding: 37px 40px 50px;
+					overflow: hidden;
+					border-bottom: 1px solid #F0F0F0;
+
+					font-size: 19px;
+				}
+
+				#retailers2-results:not(.show) .retailers2-result:nth-child(n+10) {
+					display: none;
+				}
+
+				.retailers2-result.visible {
+					visibility: visible;
+				}
+
+					.retailers2-result-name {
+						margin-bottom: 15px;
+
+						font-family: freight-big-pro, serif;
+						font-weight: 300;
+						font-size: 36px;
+					}
+
+					.retailers2-result-address {
+						float: left;
+						width: calc(100% - 345px);
+						padding-right: 90px;
+					}
+
+						.retailers2-result-address br {
+							content: '';
+						}
+
+
+					.retailers2-result-phone,
+					.retailers2-result-directions {
+						position: relative;
+						float: left;
+					}
+
+						.retailers2-result-phone-text,
+						.retailers2-result-directions-text,
+						.retailers2-result i {
+							float: left;
+							
+						}
+
+					.retailers2-result-directions {
+						float: right;
+					}
+
+
+	#retailers3 {
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		width: 100%;
+		padding: 35px 0px;
+		pointer-events: none;
+		transform: translateY(100%);
+
+		transition: transform .7s .7s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	}
+
+	#retailers3.fade-in {
+		transform: translateY(0%);
+	}
+
+	@keyframes list-animation {
+		0% { bottom: 0px; top: auto; transform: translateY(0%); }
+		49.998% { bottom: 0px; top: auto; transform: translateY(100%); }
+		49.999% { opacity: 0; }
+		50% { bottom: auto; top: 0px;  transform: translateY(-100%); }
+		100% { bottom: auto; top: 0px; transform: translateY(0%); }
+	}
+
+	@keyframes map-animation {
+		0% { bottom: auto; top: 0px; transform: translateY(0%); }
+		49.998% { bottom: auto; top: 0px; transform: translateY(-100%); }
+		49.999% { opacity: 0; }
+		50% { bottom: 0px; top: auto; transform: translateY(100%); }
+		100% { bottom: 0px; top: auto; transform: translateY(0%); }
+	}
+
+	#retailers.list #retailers3 {
+		animation: list-animation cubic-bezier(0.645, 0.045, 0.355, 1.000) 1.2s 1 forwards;
+	}
+
+	#retailers.map #retailers3 {
+		animation: map-animation cubic-bezier(0.645, 0.045, 0.355, 1.000) 1.2s 1 forwards;
+	}
+
+	#retailers3.hide-down {
+		transform: translateY(100%);
+	}
+
+	#retailers3.show-up {
+		transform: translateY(100%);
+	}
+
+		#retailers3 .page-inner {
+			max-width: 1620px;
+		}
+
+		#retailers3 form {
+			position: relative;
+			float: left;
+			width: calc(100% - 190px);
+		}
+
+			#retailers3-search,
+			#retailers3-list-button {
+				float: left;
+				height: 76px;
+				border-radius: 38px;
+			}
+
+			#retailers3-search {
+				padding: 0px 65px 0px 40px;
+				width: 100%;
+				pointer-events: auto;
+			}
+
+			#retailers3-button-search,
+			#retailers3-button-close {
+				position: absolute;
+				top: 18px;
+				right: 18px;
+				padding: 8px;
+				width: 40px;
+				height: 40px;
+				opacity: 0;
+				transition: opacity .3s;
+				pointer-events: none;
+			}
+
+			#retailers3:not(.filter) #retailers3-button-search,
+			#retailers3.filter #retailers3-button-close {
+				opacity: 1;
+				pointer-events: auto;
+				cursor: pointer;
+
+				transition: opacity .3s .3s;
+			}
+
+				#retailers3 i {
+					font-size: 24px;
+					color: #000;
+				}
+
+
+		#retailers3-list-button {
+			position: relative;
+			width: 168px;
+			height: 56px;
+			padding: 21px 0px;
+			margin-top: 10px;
+			margin-left: 22px;				
+			pointer-events: auto;
+			border-radius: 30px;
+		}
+
+
+			#retailers3-list-button1,
+			#retailers3-list-button2 {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				padding: 19px 24px 19px 35px;
+				opacity: 0;
+				transition: opacity .3s;
+			}
+
+			#retailers:not(.list) #retailers3-list-button1,
+			#retailers.list #retailers3-list-button2 {
+				opacity: 1;
+				pointer-events: auto;
+				cursor: pointer;
+
+				transition: opacity 0s .5s;
+			}
+
+				#retailers3-list-button p,
+				#retailers3-list-button i {
+					float: left;
+				}
+
+				#retailers3-list-button p {
+					float: left;
+					font-size: 14px;
+				}
+
+				#retailers3-list-button i {
+					float: right;
+					margin-top: -4px;
+					padding-top: 0px;
+					width: auto;
+				}
+
+
+		#retailers3-no-results {
+			position: absolute;
+			top: -72px;
+			left: 50%;
+			margin-left: -153px;
+			width: 306px;
+			height: 47px;
+			background-color: #828282;
+			padding: 13px 28px;
+			border-radius: 5px;
+			pointer-events: auto;
+			cursor: pointer;
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity .5s, top 0s 1s;
+		}
+
+		#retailers.list #retailers3-no-results {
+			top: 87px;
+		}
+
+		#retailers3.no-results #retailers3-no-results {
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+			#retailers3-no-results i,
+			#retailers3-no-results p {
+				float: left;
+				color: #fff;
+			}
+
+			#retailers3-no-results i {
+				margin-top: 2px;
+				margin-right: 6px;
+				font-size: 15px;
+			}
+
+			#retailers3-no-results p {
+				font-size: 17px;
+				font-style: italic;
+			}
+
+
+
+@media screen and (max-width: 1440px) {
+
+	#retailers2-continents {
+		margin-top: 58px;
+		padding-bottom: 75px;
+	}
+
+		.retailers2-continent:not(:last-child) {
+			margin-right: 110px;
+		}
+
+	
+	.retailers2-result {
+		font-size: 18px;
+	}
+
+		.retailers2-result-name {
+			font-size: 34px;
+		}
+
+		.retailers2-result-address {
+			width: calc(100% - 320px);
+		}
+}				
+
+
+@media screen and (max-width: 1280px) {
+
+	#retailers1-gradient {
+		height: 115px;
+	}
+
+	#retailers2-top {
+		height: 115px;
+	}
+
+	#retailers2-continents {
+		margin-top: 50px;
+		padding-bottom: 66px;
+	}
+
+		.retailers2-continent:not(:last-child) {
+			margin-right: 94px;
+		}
+
+	.retailers2-result {
+		font-size: 17px;
+	}
+
+		.retailers2-result-name {
+			font-size: 32px;
+		}
+
+		.retailers2-result-address {
+			width: calc(100% - 285px);
+			padding-right: 70px;
+		}
+
+			.retailers2-result i {
+				font-size: 22px;
+			}
+
+
+	#retailers3 {
+		padding: 26px 0px;
+	}
+
+		#retailers3 form {
+			width: calc(100% - 169px);
+		}
+
+			#retailers3-search {
+				padding: 0px 55px 0px 35px;
+				height: 62px;
+			}
+
+				#retailers3-button-search, 
+				#retailers3-button-close {
+					top: 10px;
+					right: 14px;
+				}
+
+			#retailers3-list-button {
+				margin-top: 6px;
+				margin-left: 16px;
+				width: 153px;
+				height: 50px;
+			}
+
+				#retailers3-list-button1, 
+				#retailers3-list-button2 {
+					padding: 16px 18px 15px 27px;
+				}
+
+
+
+		#retailers3-no-results {
+			top: -64px;
+			padding: 12px 22px;
+			margin-left: -139px;
+			width: 278px;
+			height: 42px;
+		}
+
+		#retailers.list #retailers3-no-results {
+			top: 74px;
+		}
+
+			#retailers3-no-results i {
+				margin-top: 2.5px;
+				font-size: 14px;
+			}
+
+			#retailers3-no-results p {
+				font-size: 16px;
+			}
+}
+
+
+@media screen and (max-width: 1024px) {
+
+	#retailers2-continents {
+		margin-top: 44px;
+		padding-bottom: 58px;
+	}
+
+		.retailers2-continent:not(:last-child) {
+			margin-right: 50px;
+		}
+
+	.retailers2-result {
+		padding: 32px 0px 45px;
+		font-size: 16px;
+	}
+
+		.retailers2-result-name {
+			font-size: 31px;
+		}
+
+		.retailers2-result-address {
+			width: calc(100% - 275px);
+		}
+
+
+	#retailers3 .page-inner {
+		padding: 0px 86px;
+	}
+	
+	#retailers3-search,
+	#retailers2-continents-select { 
+		padding: 0px 50px 0px 32px;
+	}
+
+		#retailers3-button-search, 
+		#retailers3-button-close {
+			right: 12px;
+		}
+}
+
+
+@media screen and (max-width: 768px) {
+	
+	#retailers1-map-infowindow {
+		padding: 27px 30px 40px;
+	}
+
+		#retailers1-map-infowindow-close1, 
+		#retailers1-map-infowindow-close2 {
+			top: 10px;
+			left: 16px;
+		}
+
+		#retailers1-map-infowindow-name {
+			font-size: 32px;
+			text-align: center;
+		}
+
+		#retailers1-map-infowindow-address {
+			margin-bottom: 15px;
+		}
+
+		#retailers1-map-infowindow-address,
+		#retailers1-map-infowindow-phone-text,
+		#retailers1-map-infowindow-directions-text {
+			font-size: 16px;
+			line-height: 166%;
+			text-align: center;
+		}
+
+		#retailers1-map-infowindow a {
+			float: none;
+			margin: 0px auto;
+			display: table;
+			clear: left;
+			text-align: center;
+		}
+
+		#retailers1-map-infowindow-phone {
+			width: 100%;
+			margin-right: 0px;
+		}
+
+			#retailers1-map-infowindow-phone i, 
+			#retailers1-map-infowindow-directions i {
+				display: none;
+			}
+
+
+	.retailers2-continent:not(:last-child) {
+		margin-right: 50px;
+	}
+
+	.retailers2-result {
+		padding: 27px 0px 40px;
+	}
+}
+
+
+@media screen and (max-width: 720px) {
+
+	#retailers1-gradient {
+		height: 90px;
+	}
+
+	#retailers2-continents {
+		margin-top: 44px;
+		padding-bottom: 44px;
+	}
+
+		#retailers2-continents-inner {
+			display: none;
+		}
+
+		#retailers2-continents-inner-mobile {
+			display: block;
+			position: relative;
+		}
+
+			#retailers2-continents-select {
+				width: 100%;
+			}
+
+			#retailers2-continents-inner-mobile:after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				right: 33px;
+				width: 0px;
+				height: 0px;
+				margin-top: -4px;
+				border-style: solid;
+				border-width: 8px 6px 0 6px;
+				border-color: #000 transparent transparent transparent;
+			}
+
+
+		.retailers2-result-address {
+			width: 100%;
+			margin-bottom: 18px;
+			padding-right: 0px;
+			
+			line-height: 150%;
+		}
+
+		.retailers2-result-phone,
+		.retailers2-result-directions {
+			float: left;
+			width: 50%;
+		}
+			.retailers2-result i {
+				display: block;
+				font-size: 20px;
+			}
+
+
+	#retailers3-no-results {
+		top: -64px;
+		padding: 9px 16px;
+		margin-left: -126px;
+		width: 252px;
+		height: 38px;
+	}
+
+	#retailers.list #retailers3-no-results {
+		top: 74px;
+	}
+
+		#retailers3-no-results i {
+			margin-top: 2.5px;
+			font-size: 13px;
+		}
+
+		#retailers3-no-results p {
+			font-size: 15px;
+		}
+}
+
+
+@media screen and (max-width: 656px) {
+
+	#retailers3 {
+		padding: 32px 0px;
+	}
+
+		#retailers3 .page-inner {
+			padding: 0px 86px;
+		}
+
+			#retailers3 form {
+				width: calc(100% - 60px);
+			}
+
+				#retailers3-search,
+				#retailers2-continents-select {
+					height: 50px;
+					padding: 0px 46px 0px 22px
+				}
+
+					#retailers3-button-search, 
+					#retailers3-button-close {
+						top: 4px;
+						right: 6px;
+					}
+
+				#retailers3-list-button {
+					margin-top: 0px;
+					margin-left: 10px;
+					width: 50px;			
+				}
+
+					#retailers3-list-button p {
+						display: none;
+					}
+
+					#retailers3-list-button1, 
+					#retailers3-list-button2 {
+						padding: 16px 11px 15px 11px;
+					}
+}
+
+
+@media screen and (max-width: 544px) {
+
+	.page-intro-text {
+		width: 252px;
+	}
+
+	.page-inner {
+		padding: 0px 23px;
+	}
+
+	#retailers2-top {
+		height: 86px;
+	}
+
+	#retailers2-continents {
+		margin-top: 18px;
+		padding-bottom: 18px;
+	}
+
+		#retailers2-continents-inner-mobile:after {
+			right: 22px;
+		}
+
+	.retailers2-result {
+		padding: 22px 5px 35px;
+	}
+
+		.retailers2-result-name {
+			margin-bottom: 8px;
+			font-size: 28px;
+		}
+
+		.retailers2-result-address {
+			margin-bottom: 14px;
+		}
+
+			.retailers2-result-address br {
+				content: none;
+			}
+
+
+	#retailers3 {
+		padding: 18px 0px;
+	}
+
+		#retailers3 .page-inner {
+			padding: 0px 18px;
+			transition: padding 0s .7s;
+		}
+
+
+		#retailers.list #retailers3 .page-inner {
+			padding: 0px 66px;
+		}
+
+
+
+			#retailers3-no-results {
+				top: -54px;
+			}
+
+			#retailers.list #retailers3-no-results {
+				top: 57px;
+			}
+}

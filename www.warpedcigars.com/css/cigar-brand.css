@@ -1,0 +1,1182 @@
+#cigar-brand {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#cigar-brand:not(.allow-scroll) {
+	height: 100%;
+	overflow: hidden;
+}
+
+#cigar-brand1 {
+	margin-right: 0px !important;
+	bottom: 0px;
+}
+
+
+	#cigar-brand-inner {
+		opacity: 0;	
+		transition: opacity 1s, transform 1s;
+		transform: translateY(100px);
+	}
+
+	#cigar-brand.fade-in #cigar-brand-inner {
+		opacity: 1;
+		transform: none;
+		transition: opacity 1s .7s, transform 1s .7s;
+	}
+
+		.page-intro-middle {
+			width: 100%;
+		}
+
+
+		#cigar-brand1 .cigar-brand-middle-button {
+			visibility: hidden;
+		}
+
+
+		#cigar-brand2 {
+			padding-bottom: 270px;
+		}
+
+
+		#cigar-brand3,
+		#cigar-brand5 {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 3840px;
+		}
+
+		#cigar-brand3 {
+			position: relative;
+			height: 840px;
+		}
+
+			#cigar-brand3 .page-inner {
+				display: table;
+				width: 100%;
+				height: 100%;
+			}
+
+				#cigar-brand3 .page-inner-inner {
+					display: table-cell;
+					vertical-align: middle;
+				}
+
+					#cigar-brand3-left {
+						width: 50%;
+					}
+
+						#cigar-brand3-text {
+							margin-top: 73px;
+						}
+
+
+			#cigar-brand3-right {
+				position: absolute;
+				right: 0px;
+				width: 58%;
+				height: 100%;
+				background-size: 400px 400px;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-color: #fff;
+			}
+
+
+		#cigar-brand4 {
+			padding: 270px 0px 310px;
+			overflow: hidden;
+		}
+
+			#cigar-brand4 .page-inner:nth-child(2) {
+				
+			}
+
+				#cigar-brand4-inner {
+					margin: 0px -42px;
+				}
+
+					#cigar-brand4-container {
+						transition: transform 1s;
+						will-change: transform;
+						backface-visibility: hidden;
+					}
+
+					#cigar-brand4-container.no-transition {
+						transition-duration: 0s;
+					}
+
+						.cigar-brand4 {
+							position: relative;
+							padding: 0px 42px;
+						}
+
+							@keyframes loop2 {
+								0%   { transform: scaleX(1); transform-origin: center right; }
+								35%  { transform: scaleX(0); transform-origin: center right; }
+								65%  { transform: scaleX(0); transform-origin: center left; }
+								100% { transform: scaleX(1); transform-origin: center left; }
+							}
+
+							.cigar-brand4-inner {
+								margin-top: 170px;
+								height: 670px;
+								border: 1px solid #D2D2D2;
+							}
+
+								.cigar-brand4-img {
+									position: relative;
+									float: left;
+									width: 40%;
+									height: 100%;
+								}
+
+									.cigar-brand4-img-inner {
+										position: absolute;
+										top: -116px;
+										right: 0px;
+										bottom: -116px;
+										left: 0px;
+										background-size: auto 100%;
+										background-position: center;
+									}
+
+
+								.cigar-brand4-info {
+									float: left;
+									display: table;
+									width: 42%;
+									height: 100%;
+									text-align: center;
+								}
+
+									.cigar-brand4-info-inner {
+										display: table-cell;
+										vertical-align: middle;
+									}
+
+										.cigar-brand4-info-name {
+											font-family: freight-big-pro, serif;
+											font-weight: 300;
+											font-size: 85px;
+											letter-spacing: 1px;
+										}
+
+										.cigar-brand4-info-details {
+											margin-top: 17px;
+										}
+
+										.cigar-brand4-info-description {
+											margin-top: 70px;
+											margin-bottom: 25px;
+											
+											line-height: 200%;	
+										}
+
+
+		#cigar-brand5 {
+			position: relative;
+			padding-bottom: 200px;
+			width: 100%;
+			overflow: hidden;
+		}
+
+			#cigar-brand5:before {
+				content: '';
+				position: absolute;
+				top: 150px;
+				right: 130px;
+				bottom: 0px;
+				left: 130px;
+				background-color: #fff;
+			}
+
+				#cigar-brand5 .page-inner-inner {
+					overflow: hidden;
+				}
+
+					#cigar-brand5-inner-left,
+					#cigar-brand5-inner-right {
+						float: left;
+						width: 50%;
+					}
+
+					#cigar-brand5-inner-right {
+						padding: 0px 45px;
+					}
+
+						#cigar-brand5-right-title {
+							display: table;
+							margin-top: -21px;
+							margin-bottom: 115px;
+							height: 260px;
+						}
+
+							#cigar-brand5-right-title-inner {
+								display: table-cell;
+								vertical-align: middle;
+
+								font-family: freight-big-pro, serif;
+								font-size: 110px;
+								line-height: 100%;
+							}
+
+						#cigar-brand5-right-info {
+							letter-spacing: .3px;
+						}
+
+							.cigar-brand5-right-each:not(:last-child) {
+								border-bottom: 1px solid #DEDEDE;
+							}
+
+								.cigar-brand5-right-each-header {
+									margin-top: 40px;
+								}
+
+								.cigar-brand5-right-each-text {
+									margin-top: 10px;
+									margin-bottom: 44px;
+								}
+
+
+			#cigar-brand5-left {
+				position: absolute;
+				top: 310px;
+				right: calc(50% + 125px);
+				height: 700px;
+				left: 0px;
+				background-size: cover;
+				background-position: center;
+				background-color: #fff;
+			}
+
+
+		#cigar-brand6 {
+			position: relative;
+			margin-top: 278px;
+			margin-right: 0px !important;
+			height: 100vh;
+		}
+
+
+			.cigar-brand.fade-out-cigar #page-next-top {
+				opacity: 0;
+			}
+
+			#cigar-brand6 .page-intro-middle {
+				transition: top 1.5s .3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+			}
+
+			body:not(.fade-out-cigar) #cigar-brand6 .page-intro-middle {
+				top: 50%;
+			}
+
+				#cigar-brand6 .cigar-brand-middle-name {
+					transition: 1.5s .3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+				}
+			
+				body:not(.fade-out-cigar) #cigar-brand6 .cigar-brand-middle-name {
+					font-size: 120px;
+				}
+
+				#cigar-brand6 .cigar-brand-middle-subtitle {
+					transition: opacity .4s 1s;
+				}
+
+				body:not(.fade-out-cigar) #cigar-brand6 .cigar-brand-middle-subtitle,
+				body.fade-out-cigar #cigar-brand6 .cigar-brand-middle-button {
+					opacity: 0;
+				}
+
+				.cigar-brand-middle-button {
+					display: table;
+					margin: -30px auto -10px;
+					transition: opacity .35s, color .7s;
+				}
+
+.page-title3 {
+	transition: opacity .7s;
+}
+
+body.cigar-brands2 .page-title3 {
+	opacity: 1;
+	transition: opacity .7s .5s;
+}
+
+
+.page-intro {
+
+}
+
+	.cigar-brand-bg {
+		position: relative;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		opacity: 0;
+		transform: scale(1.07);
+
+		transition: opacity .5s, transform 0s .5s;
+	}
+
+
+	body.sub-page-cigar .cigar-brand-bg,
+	.page-intro.show-bg:not(.fade-out) .cigar-brand-bg {
+		opacity: 1;
+		transform: scale(1);
+		
+		transition: opacity 1s, transform 2s;
+	}
+
+	.cigar-brand-bg:before {
+		content: '';
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		background-color: rgba(0,0,0,.4);
+	}
+
+		.cigar-brand-middle-name {
+			font-family: freight-big-pro, serif;
+			font-size: 160px;
+			line-height: 90%;
+			text-align: center;
+		}
+
+		.cigar-brand-middle-subtitle {
+			margin-top: 55px;
+			
+			font-size: 27px;
+			text-align: center;
+		}
+
+.menu-buttons-internal-inner {
+	transition: opacity .7s .5s;
+}
+
+body.menu .menu-buttons-internal-inner,
+body.cigar-brands2 .menu-buttons-internal-inner {
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .7s;
+}
+
+	body.white:not(.cigar-brands2) .page-cigars-button-inner,
+	body.white #page-previous-button-inner,
+	body.white #page-next-button-inner {
+		color: #393939;
+	}
+
+	.menu-buttons-internal .page-cigars-button-inner,
+	.menu-buttons-internal #page-previous-button-inner,
+	.menu-buttons-internal #page-next-button-inner {
+		color: #fff !important;
+	}
+
+	body.fade-out.no-animation .page-cigars-button-inner, 
+	body.fade-out.no-animation #page-previous-button-inner, 
+	body.fade-out.no-animation #page-next-button-inner {
+		transition: none;
+	}
+
+
+
+#cursor.mouse-drag {
+	border-width: 2px;
+	width: 20px;
+	height: 20px;
+}
+
+	#cursor:after,
+	#cursor:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		width: 5px;
+		height: 5px;
+		border: 2px solid #CCC;
+		margin-top: 2px;
+		transform-origin: center;
+		transform: rotate(45deg) translateX(-50%) translateY(-50%);
+		opacity: 0;
+		transition: opacity 0s;
+	}
+
+	#cursor:after {
+		left: 21px;
+		border-left: none;
+		border-bottom: none;
+	}
+
+	#cursor:before {
+		right: 21px;
+		border-right: none;
+		border-top: none;
+	}
+
+	#cursor.mouse-drag:after,
+	#cursor.mouse-drag:before {
+		opacity: 1;
+		transition: opacity .2s;
+	}
+
+
+#cursor.mouse-drag-down {
+	width: 20px;
+	height: 20px;
+	border-width: 10px;
+}
+
+	#cursor.mouse-drag-down:after {
+		left: 16px;
+	}
+
+	#cursor.mouse-drag-down:before {
+		right: 16px;
+	}
+
+
+
+@media screen and (min-width: 2200px) {
+
+	#cigar-brand3-left {
+		width: 46%;
+	}
+
+	#cigar-brand3-right {
+		margin-right: 128px;
+	}
+}
+
+
+@media screen and (min-width: 1921px) {
+
+	#cigar-brand4 .page-inner:nth-child(2) {
+		max-width: 1900px;
+	}
+}
+
+
+@media screen and (max-width: 1440px) {
+
+	.cigar-brand-middle-name {
+		font-size: 130px;
+	}
+
+	.cigar-brand-middle-subtitle {
+		margin-top: 51px;
+		font-size: 24px;
+	}
+
+	#cigar-brand2 {
+		padding-bottom: 216px;
+	}
+
+	#cigar-brand3 {
+		height: 672px;
+	}
+
+		#cigar-brand3-text {
+			margin-top: 58px;
+		}
+
+		#cigar-brand3-right {
+			background-size: 364px 364px;
+		}
+
+
+	#cigar-brand4 {
+		padding-top: 192px;
+		padding-bottom: 248px;
+	}
+	
+		#cigar-brand4-inner {
+			margin: 0px -32px;
+		}
+
+			.cigar-brand4 {
+				padding: 0px 32px;
+			}
+
+				.cigar-brand4:not(:last-child):after {
+					width: 134px;
+					margin-right: -67px;
+				}
+
+				.cigar-brand4-inner {
+					height: 600px;
+				}
+
+					.cigar-brand4-img-inner {
+						top: -100px;
+						bottom: -100px;
+					}
+
+					.cigar-brand4-info-name {
+						font-size: 72px;
+					}
+
+					.cigar-brand4-info-description {
+						margin-top: 60px;
+					}
+
+	
+	#cigar-brand5 {
+		padding-bottom: 130px;
+	}
+
+		#cigar-brand5:before {
+			top: 123px;
+		}
+
+		#cigar-brand5-right-title {
+			margin-top: -17px;
+			margin-bottom: 94px;
+			height: 213px;
+		}
+
+			#cigar-brand5-right-title-inner {
+				font-size: 90px;
+			}
+
+		.cigar-brand5-right-each-header {
+			margin-top: 38px;
+		}
+
+		.cigar-brand5-right-each-text {
+			margin-bottom: 41px;
+		}
+
+		#cigar-brand5-left {
+			top: 252px;
+			right: calc(50% + 50px);
+			height: 632px;
+		}
+
+	#cigar-brand6 {
+		margin-top: 256px;
+	}
+
+		body:not(.fade-out-cigar) #cigar-brand6 .cigar-brand-middle-name {
+			font-size: 104px;
+		}
+}
+
+
+@media screen and (max-width: 1280px) {
+
+	.cigar-brand-middle-name {
+		font-size: 105px;
+	}
+
+	.cigar-brand-middle-subtitle {
+		margin-top: 48px;
+		font-size: 22px;
+	}
+
+	#cigar-brand2 {
+		padding-bottom: 172px;
+	}
+
+	#cigar-brand3 {
+		height: 537px;
+	}
+
+		#cigar-brand3-text {
+			margin-top: 47px;
+		}
+
+		#cigar-brand3-right {
+			background-size: 332px 332px;
+		}
+
+	
+	#cigar-brand4 {
+		padding-top: 160px;
+		padding-bottom: 200px;
+	}
+
+		#cigar-brand4-inner {
+			margin: 0px -22px;
+		}
+
+			.cigar-brand4 {
+				padding: 0px 22px;
+			}
+
+				.cigar-brand4:not(:last-child):after {
+					width: 84px;
+					margin-right: -42px;
+				}
+
+				.cigar-brand4-inner {
+					height: 520px;
+				}
+
+					.cigar-brand4-img-inner {
+						top: -88px;
+						bottom: -88px;
+					}
+
+					.cigar-brand4-info {
+						width: 44.5%;
+					}
+
+						.cigar-brand4-info-name {
+							font-size: 62px;
+						}
+
+						.cigar-brand4-info-description {
+							margin-top: 50px;
+						}
+
+	
+	#cigar-brand5 {
+		padding-bottom: 100px;
+	}
+
+		#cigar-brand5:before {
+			top: 105px;
+			right: 106px;
+			left: 106px;
+		}
+
+		#cigar-brand5-inner-right {
+			padding: 0px 15px;
+		}
+
+			#cigar-brand5-right-title {
+				margin-top: -14px;
+				margin-bottom: 77px;
+				height: 175px;
+			}
+
+				#cigar-brand5-right-title-inner {
+					font-size: 80px;
+				}
+
+			.cigar-brand5-right-each-header {
+				margin-top: 35px;
+			}
+
+			.cigar-brand5-right-each-text {
+				margin-bottom: 39px;
+			}
+
+
+			#cigar-brand5-left {
+				top: 203px;
+				height: 607px;
+			}
+
+
+	#cigar-brand6 {
+		margin-top: 235px;
+	}
+
+		body:not(.fade-out-cigar) #cigar-brand6 .cigar-brand-middle-name {
+			font-size: 92px;
+		}
+}
+
+
+@media screen and (min-width: 1025px) {
+
+	.cigar-brand4:nth-child(even) .cigar-brand4-img,
+	.cigar-brand4:nth-child(even) .cigar-brand4-info {
+		float: right;
+	}
+
+		.cigar-brand4-inner-inner {
+			height: 100% !important;
+		}
+}
+
+
+@media screen and (max-width: 1024px) {
+
+	.page-header,
+	.page-title {
+		text-align: center;
+	}
+
+	.cigar-brand-middle-name {
+		font-size: 85px;
+		line-height: 95%;
+	}
+
+	.cigar-brand-middle-subtitle {
+		margin-top: 34px;
+	}
+
+
+	#cigar-brand2 {
+		padding-bottom: 120px;
+	}
+
+	#cigar-brand3 {
+		position: static;
+		height: auto;
+		background-color: #fff;
+	}
+
+		#cigar-brand3-left {
+			width: 60%;
+		}
+
+			#cigar-brand3-text {
+				margin-top: 37px;
+				margin-bottom: 160px;
+			}
+
+		#cigar-brand3-right {
+			position: relative;
+			right: auto;
+			width: 100%;
+			height: 500px;
+			background-color: transparent;
+			background-size: 280px 280px;
+		}
+
+	
+	#cigar-brand4 {
+		padding-top: 100px;
+		padding-bottom: 160px;
+	}
+
+		#cigar-brand4-inner {
+			margin: 0px -16px;
+		}
+
+			#cigar-brand4 .page-header {
+				text-align: center;
+			}
+
+			.cigar-brand4 {
+				padding: 0px 16px;
+			}
+
+				.cigar-brand4:not(:last-child):after {
+					opacity: 0;
+				}
+
+				.cigar-brand4-inner {
+					margin: 52px 0px;
+					padding: 62px 0px 92px;
+					height: auto;
+					overflow: hidden;
+				}
+
+					.cigar-brand4-img {
+						display: none;
+					}
+
+					.cigar-brand4-info {
+						padding: 0px 64px;
+						width: 100%;
+					}
+
+						.cigar-brand4-info-name {
+							font-size: 64px;
+						}
+
+						.cigar-brand4-info-details-image-mobile {
+							margin: 32px auto;
+							width: 100%;
+							max-width: 670px;
+						}
+							.cigar-brand4-info-details-image-mobile-inner {
+								padding-top: 28.21428571428571%;
+								background-size: contain;
+								background-position: center;
+								background-repeat: no-repeat;
+							}
+
+						.cigar-brand4-info-description {
+							margin: 0px auto;
+							max-width: 560px;
+						}
+
+
+			.cigar-brand4-bottom.selected .cigar-brand4-bottom-ball-inner {
+				width: 20px;
+				height: 20px;
+			}
+
+
+	#cigar-brand5:before {
+		top: 87px;
+		right: 0px;
+		left: 0px;
+	}
+
+	#cigar-brand5 {
+		padding-bottom: 66px;
+	}
+
+		#cigar-brand5 .page-inner-inner {
+			padding: 0px;
+		}
+		
+			#cigar-brand5-inner-left, 
+			#cigar-brand5-inner-right {
+				float: initial;
+				margin: 0px auto;
+				width: 100%;
+				max-width: 670px;
+			}
+
+			#cigar-brand5-inner-right {
+				padding: 0px;
+			}
+
+				#cigar-brand5 .page-header {
+					text-align: center;
+				}
+
+			#cigar-brand5-right-title {
+				display: block;
+				margin-top: 40px;
+				margin-bottom: 0px;
+				height: auto;
+			}
+
+				#cigar-brand5-right-title-inner {
+					display: block;
+					font-weight: 300;
+					font-size: 70px;
+					text-align: center;
+				}
+				
+
+			#cigar-brand5-right-image-mobile {
+				margin-top: 58px;
+				width: 100%;
+			}
+
+				#cigar-brand5-right-image-mobile-inner {
+					padding-top: 80.83140877598152%;
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+
+			#cigar-brand5-right-info {
+				padding-top: 30px;
+			}
+
+				.cigar-brand5-right-each-header {
+					margin-top: 33px;
+				}
+
+				.cigar-brand5-right-each-text {
+					margin-top: 15px;
+					margin-bottom: 37px;
+					text-align: center;
+				}
+
+				#cigar-brand5-left {
+					display: none;
+				}
+
+
+	#cigar-brand6 {
+		margin-top: 216px;
+	}
+
+		body:not(.fade-out-cigar) #cigar-brand6 .cigar-brand-middle-name {
+			font-size: 80px;
+		}
+}
+
+
+@media screen and (max-width: 1000px) {
+
+	#cigar-brand3-left {
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+
+	.cigar-brand-middle-name {
+		font-size: 70px;
+	}
+
+	#cigar-brand2 {
+		padding-bottom: 96px;
+	}
+
+		#cigar-brand2 .page-header {
+			visibility: hidden;
+		}
+
+	#cigar-brand3-text {
+		margin-top: 30px;
+		margin-bottom: 132px;
+	}
+
+	#cigar-brand3-right {
+		height: 415px;
+	}
+
+	#cigar-brand4 {
+		padding-bottom: 127px;
+	}
+
+		#cigar-brand4-inner {
+			margin: 0px;
+		}
+
+			.cigar-brand4-inner {
+				padding: 56px 0px 90px;
+			}
+
+				.cigar-brand4-info {
+					padding: 0px 30px;
+				}
+
+					.cigar-brand4-info-description {
+						padding: 0px 40px;
+					}
+
+
+	#cigar-brand6 {
+		margin-top: 200px;
+	}
+
+		body:not(.fade-out-cigar) #cigar-brand6 .cigar-brand-middle-name {
+			font-size: 70px;
+		}
+}
+
+
+
+@media screen and (max-width: 720px) {
+	
+	.page-intro-middle {
+		padding: 0px 82px;
+	}
+}
+
+
+@media screen and (max-width: 544px) {
+
+	.page-intro-middle {
+		padding: 0px 20px;
+	}
+
+		.cigar-brand-middle-name br {
+			content: none;
+		}
+
+	.page-title {
+		font-size: 40px;
+	}
+
+	.page-title3 {
+		display: none;
+	}
+
+	.cigar-brand-middle-name {
+		font-size: 55px;
+		line-height: 100%;
+	}
+
+	.cigar-brand-middle-subtitle {
+		margin-top: 20px;
+		font-size: 20px;
+	}
+
+	.page-cigars-button.fade-in {
+		transition: opacity 1s .5s;
+	}
+
+	#cigar-brand2 {
+		padding-bottom: 60px;
+	}
+
+		#cigar-brand .page-inner-inner {
+			overflow: hidden;
+			padding-bottom: 17px;
+		}
+
+	#cigar-brand3-text {
+		margin-top: 24px;
+		margin-bottom: 110px;
+	}
+
+	#cigar-brand3-right {
+		height: 345px;
+		background-size: 200px 200px;
+	}
+
+		#cigar-brand3 .page-header {
+			text-align: left;
+		}
+
+
+	#cigar-brand4 {
+		padding-top: 52px;
+		padding-bottom: 102px;
+	}
+
+		#cigar-brand4 .page-inner {
+			padding: 0px 20px;
+		}
+
+			.cigar-brand4 {
+				padding: 0px 5px;
+			}
+
+				.cigar-brand4-inner {
+					margin-top: 20px;
+					padding: 43px 0px 63px;
+				}
+
+					.cigar-brand4-info {
+						padding: 0px 15px;
+					}
+
+						.cigar-brand4-info-name {
+							font-size: 44px;
+						}
+
+						.cigar-brand4-info-details span {
+							display: none;
+						}
+
+						.cigar-brand4-info-description {
+							padding: 0px 20px;
+						}
+
+
+			.cigar-brand4-bottom {
+				width: 100px;
+			}
+
+				.cigar-brand4-bottom-ball-inner {
+					width: 13px;
+					height: 13px;
+				}
+
+				.cigar-brand4-bottom.selected .cigar-brand4-bottom-ball-inner {
+					width: 18px;
+					height: 18px;
+			}
+
+	
+	#cigar-brand5 {
+		padding-bottom: 45px;
+	}
+
+		#cigar-brand5:before {
+			top: 78px;
+		}
+
+		#cigar-brand5-right-image-mobile {
+			margin-top: 40px;
+		}
+
+			#cigar-brand5-right-title-inner {
+				font-size: 56px;
+			}
+
+		#cigar-brand5-right-info {
+			padding-top: 20px;
+		}
+
+			.cigar-brand5-right-each-header {
+				margin-top: 30px;
+				text-align: left;
+			}
+
+			.cigar-brand5-right-each-text {
+				margin-bottom: 32px;
+			}
+
+
+	#cigar-brand6 {
+		margin-top: 152px;
+	}
+
+		body:not(.fade-out-cigar) #cigar-brand6 .cigar-brand-middle-name {
+			font-size: 55px;
+		}
+}
+
+
+
+@media screen and (min-width: 1441px) and (max-height: 850px) {
+
+	.cigar-brand-middle-name {
+		font-size: 130px;
+	}
+
+	.cigar-brand-middle-subtitle {
+	    margin-top: 51px;
+	    font-size: 24px;
+	}
+}
+
+
+@media screen and (min-width: 1281px) and (max-width: 1441px) and (max-height: 850px) {
+
+	.cigar-brand-middle-name {
+		font-size: 105px;
+	}
+
+	.cigar-brand-middle-subtitle {
+	    margin-top: 48px;
+	    font-size: 22px;
+	}
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) and (max-height: 660px) {
+
+	.cigar-brand-middle-name {
+		font-size: 85px;
+    	line-height: 95%;
+	}
+
+	.cigar-brand-middle-subtitle {
+	    margin-top: 34px;
+	}
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 660px) {
+
+	.cigar-brand-middle-name {
+		font-size: 70px;
+	}
+}
+
+
+@media screen and (min-width: 545px) and (max-width: 768px) and (max-height: 660px) {
+
+	.cigar-brand-middle-name {
+	    font-size: 55px;
+	    line-height: 100%;
+	}
+
+	.cigar-brand-middle-subtitle {
+	    margin-top: 20px;
+	    font-size: 20px;
+	}
+}
+
+
+@supports not (-webkit-overflow-scrolling: touch) {
+	
+	.cigar-brand-bg {
+		background-attachment: fixed;
+	}
+}

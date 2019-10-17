@@ -1,0 +1,259 @@
+#cigar-brands {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+	#cigar-brands1 {
+	    height: 100%;
+	}
+
+		.page-inner {
+			height: 100%;
+		}
+
+		#cigar-brands1 .page-inner {
+			max-width: 2300px;
+		}
+
+			#cigar-brands1-slides {
+				position: relative;
+				height: 82%;
+			}
+
+				.cigar-brands-slide {
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					width: 100%;
+					height: 100%;					
+					overflow: hidden;
+					z-index: 0;
+				}
+
+				.cigar-brands-slide.selected {
+					z-index: 1;
+				}
+
+					.cigar-brands-slide-inner {
+						height: 100%;
+						background-size: cover;
+						background-position: center;
+						opacity: 0;
+						transform: scale(1.07);
+
+						transition: opacity 2s, transform 0s 2s;
+					}
+
+					.cigar-brands-slide.selected .cigar-brands-slide-inner {
+						opacity: 1;
+						transform: scale(1);
+
+						transition:opacity 2s .5s, transform 3s .7s;
+					}
+
+
+			#cigar-brands1-bottom {
+				position: relative;
+				height: 19%;
+				z-index: 1;
+			}
+
+				#cigar-brands1-bottom-title {
+					display: table;
+					margin: 0px auto;
+					transform: translateY(-53%);
+				}
+
+					#cigar-brands1-bottom-title p {
+
+						font-family: freight-big-pro, serif;
+						font-size: 125px;
+						text-align: center;
+						color: #fff;
+
+						transform: translateY(0px);
+						transition: opacity .7s .5s, transform .7s .4s;
+					}
+
+					#cigar-brands1-bottom-title.transition p {
+						transform: translateY(30px);
+						opacity: 0;
+						transition: opacity .3s, transform 0s .3s;
+					}
+
+						#cigar-brands1-bottom-title p br,
+						#cigar-brands1-bottom-title p br:after {
+							content: ' ';
+						}
+
+
+				#cigar-brands1-bottom-button {
+					position: absolute;
+					top: 55%;
+					left: 50%;
+					margin-top: -17px;
+					margin-left: -44px;
+					cursor: pointer;
+					transition: opacity .7s .7s, color .7s;
+				}
+
+				.cigar-brands-button p {
+					font-weight: 700;
+					font-size: 15px;
+					color: #fff;
+				}
+
+				#cigar-brands1-bottom-button.transition {
+					opacity: 0;
+					transition: opacity .4s, color .7s;
+				}
+
+
+		#cigar-brands1-info {
+			position: absolute;
+			top: 69%;
+			left: 50%;
+			width: 0px;
+			height: 0px;
+			z-index: 1;
+		}
+
+			#cigar-brands1-line {
+				display: table;
+				white-space: nowrap;
+				opacity: 0;
+
+				transition: opacity .7s .7s, transform 1.1s cubic-bezier(0.770, 0.000, 0.175, 1.000); /* easeInOutQuart */
+			}
+
+			#cigar-brands1-line.fade-in {
+				opacity: 1;
+			}
+
+				.slide-line {
+					width: 15vw;
+				}
+
+					.slide-line-line {
+						transition: transform 5.75s 1s linear, opacity .5s;
+					}
+
+					.slide-line:last-child .slide-line-line,
+					.slide-line:last-child .slide-line-inner:before {
+						display: none;
+					}
+
+
+
+
+
+
+@media screen and (min-height: 1200px) {
+
+	#cigar-brands1-slides {
+		height: 81%;
+	}
+
+	#cigar-brands1-bottom {
+		height: 19%;
+	}
+
+	#cigar-brands1-info {
+		top: 70%;
+	}
+}
+
+
+@media screen and (max-width: 1920px) {
+	
+	#cigar-brands1-bottom-button {
+		margin-top: -17px;
+		margin-left: -41px;
+	}
+}
+
+
+@media screen and (max-width: 1440px) {
+
+	#cigar-brands1-bottom-title p {
+		font-size: 103px;
+	}
+}
+
+
+@media screen and (max-width: 1280px) {
+
+	#cigar-brands1 .page-inner {
+		padding: 0px;
+	}
+
+		#cigar-brands1-bottom-title p {
+			font-size: 84px;
+		}
+}
+
+
+@media screen and (max-width: 1024px) {
+
+	#cigar-brands1-bottom-title p {
+		font-size: 69px;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+
+	#cigar-brands1-bottom-title {
+		padding: 0px 40px;
+	}
+
+		#cigar-brands1-bottom-title p {
+			line-height: 100%;
+		}
+
+
+	.slide-line {
+		width: 18.8vw;
+	}
+}
+
+
+@media screen and (max-width: 544px) {
+
+	.page-title3 {
+		display: none;
+	}
+
+	#cigar-brands1-info {
+		top: calc(100% - 250px);
+	}
+
+	#cigar-brands1-slides {
+		height: calc(100% - 163px);
+	}
+
+	#cigar-brands1-bottom {
+		height: 163px;
+	}
+
+	#cigar-brands1-bottom-title {
+		padding: 0px 20px;
+	}
+
+		#cigar-brands1-bottom-title p {
+			font-size: 55px;
+			line-height: 106%;
+		}
+
+			#cigar-brands1-bottom-title p br,
+			#cigar-brands1-bottom-title p br:after {
+				content: none;
+			}
+
+		#cigar-brands1-bottom-button {
+			margin-top: -13px;
+			margin-left: -38px;
+		}
+}
