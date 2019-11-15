@@ -7,3 +7,6 @@ const navigateToMenu = function(path){
 
 const menus = Array.from(document.getElementsByClassName('menu-middle'));
 menus.forEach(m => m.addEventListener('click', () => navigateToMenu(m.href)));
+
+const bottomMenus = Array.from(document.getElementsByClassName('menu-item'));
+bottomMenus.forEach(m => m.addEventListener('click', () => navigateToMenu(m.href)));
